@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<style>
+		body, html {
+			padding: 0;
+			margin: 0;
+			font-family: "Times New Roman"; font-weight: normal; font-size: 12px;
+			line-height: 1em;
+		}
+		p, div {
+			padding: 0;
+			margin: 0;
+			font-family: "Times New Roman"; font-weight: normal; normal; font-size: 12px;
+			line-height: 1em;
+		}
+		#wrapper {
+			padding: 0.5cm 0.5cm 0.5cm 0.5cm;
+			font-family: "Times New Roman";
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 1em;
+		}
+		#tnumber {  }
+		#head, #head p { font-family: "Times New Roman"; font-size: 12px; font-weight: normal; line-height: 1em; }
+		#ticket { padding: 0.8cm 0 0.2cm 0; font-family: "Times New Roman"; font-weight: normal; font-size: 12px; }
+		.title {
+			font-family: "Times New Roman"; font-size: 12px;
+			font-weight: bold;
+			text-align: center;
+			padding: 0.8cm 0 0.2cm 0;
+			line-height: 1em;
+		}
+		.center { font-family: "Times New Roman"; font-weight: normal; normal; font-size: 12px; text-align: center; }
+		.upline { font-size: 8px; line-height: 8px; vertical-align: super; font-family: "Times New Roman"; font-weight: normal; normal; }
+		.left { text-align: left; }
+		.right { text-align: right; }
+		.hidden { display: none; }
+		.line, .line span { line-height: 2.5em; font-family: "Times New Roman"; font-weight: normal; font-size: 12px; }
+		.bold { font-family: "Times New Roman"; font-size: 12px; font-weight: bold; }
+		table { width: 100%%; border="1"; border-collapse: collapse; font-family: "Times New Roman"; font-weight: normal; font-size: 12px; line-height: 1em; }
+		td, th { border: 1px solid #ddd;; padding: 3px 5px; font-family: "Times New Roman"; font-weight: normal; font-size: 12px; }
+		th { background-color: #f5f5f5; }
+		tr, td, th { page-break-inside: avoid; }
+		.vise { width: 100%%; }
+		.vise td { border: none; }
+		.vise td:nth-of-type(2) { text-align: right; vertical-align: bottom; white-space: nowrap; padding: 0 0 1.2em 0; }
+		.vise td:nth-of-type(1) { padding: 0 5em 1.2em 0; }
+		.contact { font-family: "Times New Roman"; font-weight: normal; normal; font-size: 12px; text-align: left; }
+		.contact span { border-top: 1px solid #000; }
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="tnumber">
+			<p>______________ № ______________</p>
+			<p>на № ___________ от ___________</p>
+		</div>
+		<div id="head" class="right">
+			<p>Директору по ИТ</p>
+			<p>ПАО «Курганский</p>
+			<p>машиностроительный завод»</p>
+			<p>В.В. Залесовой</p>
+		</div>
+		<p>Заполняется при приеме заявки:</p>
+		<p>Дата приема заявки: «_____» _____________ 201__г. Время приема заявки: ___: ___</p>
+		<br />
+		<p><strong>Заявка на изменение доступа к информационным ресурсам</strong> (все реквизиты обязательны к заполнению, пояснения по заполнению полей даны в файле “Инструкция и перечень ресурсов.doc”)</p>
+		<br />
+		<table><thead><tr><th>№</th><th>Фамилия</th><th>Имя (полностью)</th><th>Отчество (полностью)</th><th>Должность</th><th>Отдел</th><th>Местоположение</th><th>Табельный номер</th><th>Тел</th></tr></thead><tbody>%s
+		<br />
+		<p><strong>Ресурсы</strong></p>
+		<br />
+		<table><thead><tr><th>Название информационной системы/ресурса (тип профиля)</th><th>Профиль доступа</th><th>Статус</th></tr></thead><tbody>%s
+		<br />
+		<p>Руководитель подразделения&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_____________      _____________</p>
+		<p class="upline">(дата)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(подпись)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Ф.И.О.)</p>
+		<br />
+		<br />
+		<p>Лист согласования:</p>
+		<table>
+			<thead><tr><th>ФИО</th><th>Подразделение и должность</th><th>Резолюция / Подпись</th><th>Дата</th></tr></thead>
+			<tbody>
+				<tr><td>Захаров Сергей Вячеславович</td><td>Директор по экономической безопасности ООО «ВМК «ВгТЗ»</td><td></td><td></td></tr>
+				<tr><td>Мочалкин Александр Петрович</td><td>Директор по экономической безопасности ОАО «Курганмашзавод»</td><td></td><td></td></tr>
+			</tbody>
+		</table>
+		<br />
+		<p>Отметка о выполнении заявки:</p>
+		<p>Пользователь: _________________________________________________________</p>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(подпись пользователя)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(дата, время)</p>
+		<p>Исполнитель: _________________________________________________________</p>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(подпись, Ф.И.О. исполнителя)</p>
+	</div>
+</body>
+</html>

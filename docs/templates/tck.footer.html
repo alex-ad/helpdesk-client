@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<script>
+		var mainFooter = "** Список должностей сформирован на основании штатного расписания ООТиЗ<br>*** Заявка сформирована с помощью системы электронных заявок helpdesk";
+		var lastFooter = "";
+		function selectFooter() {
+			var vars = {};
+			var x = document.location.search.substring(1).split('&');
+			for(var i in x) {
+				var z = x[i].split('=',2);
+				vars[z[0]] = decodeURIComponent(z[1]);
+			}
+			if (vars.page == vars.topage) {
+				document.getElementById('footer').innerHTML = lastFooter
+			} else {
+				document.getElementById('footer').innerHTML = mainFooter
+			}
+		}
+	</script>
+	<style>
+		#footer {
+			padding: 0;
+			margin: 0 0 0 35px;
+			font-family: "Times New Roman"; font-weight: normal; font-size: 8px;
+		}
+	</style>
+</head>
+<body onload="selectFooter()">
+	<div id="footer"></div>
+</body>
+</html>
