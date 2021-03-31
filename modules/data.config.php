@@ -21,6 +21,5 @@
 		"BASE"		=>	"ts",
 		"USER"		=>	"root",
 		"PASSWORD"	=>	""
-		//"PASSWORD"	=>	"dm48hsw2"
 	);
 ?>
